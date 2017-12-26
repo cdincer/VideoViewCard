@@ -25,6 +25,18 @@ public class MainActivity extends AppCompatActivity {
                 mp.setLooping(true);
             }
         });
+
+
+        MediaPlayer mPlayer = MediaPlayer.create(this,R.raw.timeless);
+        mPlayer.start();
+        mPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener(){
+            @Override
+            public void onPrepared(MediaPlayer mp2){
+
+                mp2.setLooping(true);
+            }
+        });
+
     }
 
 
